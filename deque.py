@@ -1,0 +1,16 @@
+from collections import deque
+
+d = deque("Hello", maxlen=10)
+d.append('4')
+d.append(5)
+d.appendleft("World")
+d.popleft()
+d.clear()
+d.extend('456')
+d.extend('Hello')
+d.extend({1,2,3})
+d.extendleft('yeh')
+d.rotate(-1)
+d.rotate(2)
+d.extend([1,2,3,4,5,6,7,8,9,10])
+print(d)
